@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+        <h1 class="heading">Calculator App</h1>
+      <div class="container">
+
+        <div class="input-container">
+            <input type="text" id="result" readonly />
+            <button class="clear-btn" onclick="clearLastCharacter()">&#x2715;</button>
+          </div>
+
+        <div class="btns">
+
+            <div class="btn-row">
+                <button onclick="addNumber(7)">
+                  <span class="btn-text">7</span>
+                </button>
+                <button onclick="addNumber(8)">
+                  <span class="btn-text">8</span>
+                </button>
+                <button onclick="addNumber(9)">
+                  <span class="btn-text">9</span>
+                </button>
+                <button id="taskBtn" onclick="setOperator('*')">
+                  <span class="btn-text">x</span>
+                </button>
+              </div>
+
+          <div class="btn-row">
+            <button onclick="addNumber(4)">
+              <span class="btn-text">4</span>
+            </button>
+            <button onclick="addNumber(5)">
+              <span class="btn-text">5</span>
+            </button>
+            <button onclick="addNumber(6)">
+              <span class="btn-text">6</span>
+            </button>
+            <button id="taskBtn" onclick="setOperator('-')">
+              <span class="btn-text">-</span>
+            </button>
+          </div>
+
+
+          <div class="btn-row">
+            <button onclick="addNumber(1)">
+              <span class="btn-text">1</span>
+            </button>
+            <button onclick="addNumber(2)">
+              <span class="btn-text">2</span>
+            </button>
+            <button onclick="addNumber(3)">
+              <span class="btn-text">3</span>
+            </button>
+            <button id="taskBtn" onclick="setOperator('+')">
+              <span id="addition" class="btn-text">+</span>
+            </button>
+          </div>
+
+          <div class="btn-row">
+            <button id="clear" onclick="clearInput()">
+              <span class="btn-text">C</span>
+            </button>
+            <button onclick="addNumber(0)">
+              <span class="btn-text">0</span>
+            </button>
+            <button id="taskBtn" onclick="calculate()">
+              <span class="btn-text">=</span>
+            </button>
+            <button id="taskBtn" onclick="setOperator('/')">
+              <span class="btn-text">/</span>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

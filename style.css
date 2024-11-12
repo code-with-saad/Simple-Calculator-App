@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #c5c5c5, #c6c6c6);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  background-color: rgb(0, 204, 255);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.heading {
+  font-size: 34px;
+  margin: 10px;
+}
+
+
+#result {
+  padding: 20px 7px;
+  width: 85%;
+  margin: 20px 60px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  right: 47%;
+  transform: translateX(40%);
+  font-size: 18px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #999;
+}
+
+.clear-btn:hover {
+  color: #333;
+}
+
+
+
+.btn-row button {
+  background: rgb(0, 139, 53);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  margin: 10px 0px;
+}
+.btn-text {
+  display: block;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 22px;
+  background: rgb(0, 188, 72);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.btn-row button:active .btn-text {
+  transform: translateY(-2px);
+}
+
+
+
+
+.btn-row #taskBtn {
+  background: rgb(46, 0, 163);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  margin: 10px 0px;
+}
+
+#taskBtn .btn-text {
+  display: block;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 22px;;
+  background: rgb(69, 0, 206);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.btn-row #taskBtn:active .btn-text {
+  transform: translateY(-2px);
+}
+
+
+
+
+.btn-row #clear {
+  background: rgb(163, 0, 54);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  margin: 10px 0px;
+}
+
+#clear .btn-text {
+  display: block;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 22px;;
+  background: rgb(240, 0, 60);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.btn-row #clear:active .btn-text {
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 512px) {
+  .container {
+    margin-left: 30px;
+  }
+}
